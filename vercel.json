@@ -1,4 +1,5 @@
 {
+    "buildCommand": "py manage.py collectstatic",
     "builds": [{
         "src": "api_taller/wsgi.py",
         "use": "@vercel/python",
@@ -13,6 +14,6 @@
             "src": "/(.*)",
             "dest": "api_taller/wsgi.py"
         }
-    ],
-    "buildCommand": "py manage.py collectstatic"
+    ]
+   
 }
