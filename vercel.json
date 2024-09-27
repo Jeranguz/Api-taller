@@ -1,5 +1,5 @@
 {
-    "buildCommand": "py manage.py collectstatic",
+    "buildCommand": "py manage.py collectstatic --noinput",
     "builds": [{
         "src": "api_taller/wsgi.py",
         "use": "@vercel/python",
