@@ -14,5 +14,5 @@
             "dest": "api_taller/wsgi.py"
         }
     ],
-    "buildCommand": "python manage.py collectstatic --noinput"
+    "buildCommand": "py manage.py collectstatic"
 }
