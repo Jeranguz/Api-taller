@@ -23,8 +23,7 @@ class Juego(models.Model):
     compania = models.CharField(max_length=100)
     genero = models.ForeignKey(Genero, on_delete=models.CASCADE)
     plataformas = models.ManyToManyField(Plataforma, related_name='juegos')
-    # image = models.ImageField(upload_to='game_images/', blank=True, null=True)
-    image = models.ImageField(blank=True, null=True)
+    image = models.ImageField(upload_to='game_images/', blank=True, null=True)
 
     # def save(self, *args, **kwargs):
     #     # Si hay una imagen, la convertimos a .webp antes de guardar
